@@ -4,24 +4,4 @@
 body {
   background-color: black;
   color: white;
-  font-family: "serif";
-}
-.name {
-  font-family: "Aladin";
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(156, 95, 255, 1) 25%,
-    rgba(83, 226, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.txt {
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(156, 95, 255, 1) 25%,
-    rgba(83, 226, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

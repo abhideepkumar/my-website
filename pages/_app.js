@@ -1,6 +1,5 @@
 import "../styles/globals.css";
-import "@fontsource/aladin";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
