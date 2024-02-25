@@ -1,10 +1,11 @@
 import "../styles/globals.css";
-import Navbar from "../components/Navbar";
+import toast, { Toaster } from 'react-hot-toast';
+import "@fontsource/quicksand";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
+      <Toaster />
       <Component {...pageProps} />
     </>
   );

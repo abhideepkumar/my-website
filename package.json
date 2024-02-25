@@ -9,12 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/aladin": "^4.5.11",
-    "@fontsource/sacramento": "^4.5.9",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fontsource/quicksand": "^5.0.16",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
@@ -22,6 +17,8 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-social-icons": "^6.14.0",
     "tailwindcss": "3.3.2"
   }
 }

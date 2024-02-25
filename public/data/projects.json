@@ -1,0 +1,80 @@
+{
+  "projects": [
+    {
+      "title": "Event Management for college clubs - SigmaEvents",
+      "description": "Developed an event management platform using Next.js and MongoDB allowing users to easily plan events and staff.",
+      "achievements": [
+        "Implemented user and Admin authentication.",
+        "This project is also selected in SWOC Season 4."
+      ],
+      "features": [
+        {
+          "featureTitle": "Dark mode",
+          "featureDescription": "Allows users to switch between light and dark mode."
+        },
+        {
+          "featureTitle": "Google Signin",
+          "featureDescription": "Allows users to login using google account."
+        },
+        {
+          "featureTitle": "Personal info stored in MongoDB",
+          "featureDescription": "Stores user's personal information in MongoDB."
+        },
+        {
+          "featureTitle": "Easy registration experience",
+          "featureDescription": "Allows users to register for events easily and seamlessly."
+        }
+      ],
+      "link": "https://sigmaevents.netlify.app/"
+    },
+    {
+      "title": "News Aggregator Platform - NewsHunter",
+      "description": "Created news aggregator platform fetching live articles from NewsAPI based on user's interests.",
+      "features": [
+        {
+          "featureTitle": "Real-time",
+          "featureDescription": "Provides real-time, dynamic content."
+        }
+      ],
+      "link": "https://newshunter0.netlify.app/"
+    },
+    {
+      "title": "Simple Quiz Website",
+      "description": "Built a simple quiz website in Next.js using MongoDB for database and deployed it on Netlify.",
+      "features": [
+        {
+          "featureTitle": "Responsive",
+          "featureDescription": "Adapts to different screen sizes and devices."
+        },
+        {
+          "featureTitle": "Interactive",
+          "featureDescription": "Gives feedback and score to the user which is then stored in database."
+        }
+      ],
+      "link": "https://mongoquiz.netlify.app/"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Frontend Developer",
+      "company": "Google Developer Student Club, NIE Mysore",
+      "duration": "December 2023 - January 2024",
+      "link": "",
+      "responsibilities": [
+        "Designed and developed user interfaces for web applications using Next.js and Tailwind CSS.",
+        "Tested and debugged frontend code."
+      ]
+    },
+    {
+      "role": "Backend Developer",
+      "company": "Pratigya Team",
+      "duration": "January 2024 - February 2024",
+      "link": "",
+      "responsibilities": [
+        "Created and maintained APIs using Node.js and Express.js.",
+        "Used Firebase's Firestore as the database and implemented CRUD operations.",
+        "Used Firebase for authentication."
+      ]
+    }
+  ]
+}
