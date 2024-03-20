@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Event Management for college clubs - SigmaEvents",
-      "description": "Developed an event management platform using Next.js and MongoDB allowing users to easily plan events and staff.",
+      "description": "Developed an event management platform using Next.js and MongoDB allowing users to easily plan events and manage profile.",
       "achievements": [
         "Implemented user and Admin authentication.",
         "This project is also selected in SWOC Season 4."
@@ -10,19 +10,15 @@
       "features": [
         {
           "featureTitle": "Dark mode",
-          "featureDescription": "Allows users to switch between light and dark mode."
-        },
-        {
-          "featureTitle": "Google Signin",
-          "featureDescription": "Allows users to login using google account."
+          "featureDescription": "Allows users to switch between light and dark mode as per their comfort."
         },
         {
           "featureTitle": "Personal info stored in MongoDB",
-          "featureDescription": "Stores user's personal information in MongoDB."
+          "featureDescription": "Stores user's personal information in MongoDB so you don't need to fill same details for every event registration."
         },
         {
           "featureTitle": "Easy registration experience",
-          "featureDescription": "Allows users to register for events easily and seamlessly."
+          "featureDescription": "Allows users to register and manage for events easily and seamlessly."
         }
       ],
       "link": "https://sigmaevents.netlify.app/"
@@ -32,8 +28,12 @@
       "description": "Created news aggregator platform fetching live articles from NewsAPI based on user's interests.",
       "features": [
         {
-          "featureTitle": "Real-time",
-          "featureDescription": "Provides real-time, dynamic content."
+          "featureTitle": "News API Integration",
+          "featureDescription": "Provides news articles based on user's interests, dynamic content."
+        },
+        {
+          "featureTitle": "Slug Implementation",
+          "featureDescription": "Implemented dynamic handling of API calls based on user-provided keywords using the slug concept."
         }
       ],
       "link": "https://newshunter0.netlify.app/"
@@ -43,18 +43,29 @@
       "description": "Built a simple quiz website in Next.js using MongoDB for database and deployed it on Netlify.",
       "features": [
         {
-          "featureTitle": "Responsive",
-          "featureDescription": "Adapts to different screen sizes and devices."
+          "featureTitle": "Tech used",
+          "featureDescription": "Created a simple quiz website using HTML, CSS, and JavaScript in Next.js for educational purposes."
         },
         {
-          "featureTitle": "Interactive",
-          "featureDescription": "Gives feedback and score to the user which is then stored in database."
+          "featureTitle": "MongoDB database",
+          "featureDescription": "10 hard-coded questions with a 15-second timer for each question, with results saved in a MongoDB database."
         }
       ],
       "link": "https://mongoquiz.netlify.app/"
     }
   ],
   "experiences": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Pratigya Team",
+      "duration": "January 2024 - February 2024",
+      "link": "https://pratigya-nie.netlify.app/",
+      "responsibilities": [
+        "Created and maintained APIs using Node.js and Express.js.",
+        "Used Firebase's Firestore as the database and implemented CRUD operations.",
+        "Used Firebase for authentication."
+      ]
+    },
     {
       "role": "Frontend Developer",
       "company": "Google Developer Student Club, NIE Mysore",
@@ -64,16 +75,23 @@
         "Designed and developed user interfaces for web applications using Next.js and Tailwind CSS.",
         "Tested and debugged frontend code."
       ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Google Developer Student Club, NIE Mysore",
+      "description": ["Tech Core Member of the GDSC Club."]
     },
     {
-      "role": "Backend Developer",
-      "company": "Pratigya Team",
-      "duration": "January 2024 - February 2024",
-      "link": "",
-      "responsibilities": [
-        "Created and maintained APIs using Node.js and Express.js.",
-        "Used Firebase's Firestore as the database and implemented CRUD operations.",
-        "Used Firebase for authentication."
+      "title": "Girl Geek IEEE Hackathon, VVCE Mysore",
+      "description": [
+        "Secured third place with a website leveraging Hugging Face’s AI integration for deepfake detection."
+      ]
+    },
+    {
+      "title": "Social Winter of Code 2024",
+      "description": [
+        "My project, Sigma Events, was selected for open-source contributions, with developers actively contributing to the repository."
       ]
     }
   ]

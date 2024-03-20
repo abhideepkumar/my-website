@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Head from "next/head";
-import data from "/public/data/projects.json";
-import toast from "react-hot-toast";
 import { SocialIcon } from "react-social-icons";
+import Projects from "<>/components/projects";
+import Experience from "<>/components/experience";
+import Achievements from "<>/components/achievements";
 
 export default function Home() {
   const onResumeDownload = () => {
-    window.open("/data/resume.pdf", "_blank");
+    window.open(
+      "https://drive.google.com/drive/folders/1Ki6Jl84hvH4MJR-JGcme0wTQBp2uFuSs?usp=drive_link",
+      "_blank"
+    );
   };
 
   return (
@@ -17,7 +21,7 @@ export default function Home() {
       </Head>
       <div className="w-screen h-1 bg-purple-600"></div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
-        <div className="p-5">
+        <div className="p-5 md:ml-5">
           <div className="flex items-center">
             <Image
               src="/img/pic.jpg"
@@ -61,7 +65,10 @@ export default function Home() {
             <p className="font-light tracking-wide">
               Greetings! I am <span className="font-semibold">Abhideep Kumar,</span> currently
               pursuing my B.E at
-              <span className="font-semibold"> The National Institute of Engineering, Mysore.</span>{" "}
+              <span className="font-semibold">
+                {" "}
+                The National Institute of Engineering, Mysore.
+              </span>{" "}
               With a passion for technology and innovation, I have honed my skills as a{" "}
               <span className="font-semibold">full-stack web developer</span>, proficient in
               <span className="font-semibold"> Javascript, Python, C,</span> and frameworks like
@@ -74,65 +81,13 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="md:col-span-2">
-          <div className="text-3xl p-5">Projects</div>
-          {data.projects.map((project) => (
-            <div key={project.title} className="p-5 border-b-2 border-gray-200">
-              <h2 className="text-2xl text-purple-600">{project.title}</h2>
-              <p className="text-lg text-gray-600">{project.description}</p>
-              <ul className="list-disc list-inside">
-                {project.achievements &&
-                  project.achievements.map((achievement) => (
-                    <li key={achievement} className="text-gray-600">
-                      {achievement}
-                    </li>
-                  ))}
-                {project.features &&
-                  project.features.map((feature) => (
-                    <li key={feature.featureTitle} className="text-gray-600">
-                      {feature.featureTitle}: {feature.featureDescription}
-                    </li>
-                  ))}
-              </ul>
-              <button
-                onClick={() => {
-                  project.link
-                    ? window.open(project.link)
-                    : toast.error("Link not found but you can lookup in Github", {
-                        duration: 5000,
-                      });
-                }}
-              >
-                <p className="text-purple-600 hover:underline">View Project</p>
-              </button>
-            </div>
-          ))}
-          <div className="text-3xl p-5">Experiences</div>
-          {data.experiences.map((experience) => (
-            <div key={experience.role} className="p-5 border-b-2 border-gray-200">
-              <h2 className="text-2xl text-purple-600">{experience.role}</h2>
-              <h3 className="text-xl text-gray-600">{experience.company}</h3>
-              <p className="text-lg text-gray-600">{experience.duration}</p>
-              <ul className="list-disc list-inside">
-                {experience.responsibilities.map((responsibility) => (
-                  <li key={responsibility} className="text-gray-600">
-                    {responsibility}
-                  </li>
-                ))}
-              </ul>
-              <button
-                onClick={() => {
-                  experience.link
-                    ? window.open(experience.link)
-                    : toast.error("Link not found but you can lookup in Github", {
-                        duration: 5000,
-                      });
-                }}
-              >
-                <p className="text-purple-600 hover:underline">View Project</p>
-              </button>
-            </div>
-          ))}
+        <div className="md:col-span-2 md:ml-5">
+          <div className="text-2xl p-3">Projects</div>
+          <Projects />
+          <div className="text-2xl p-3">Experiences</div>
+          <Experience />
+          <div className="text-2xl p-3">Achievements</div>
+          <Achievements />
         </div>
       </div>
     </main>
