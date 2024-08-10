@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "title": "Event Management for college clubs - SigmaEvents",
-      "description": "Developed an event management platform using Next.js and MongoDB allowing users to easily plan events and manage profile.",
+      "title": "Event Management for College Clubs - Sigma Events",
+      "description": "Created an event management platform for college clubs, streamlining event organization and attendance management with distinct admin and user interfaces.",
       "achievements": [
-        "Implemented user and Admin authentication.",
-        "This project is also selected in SWOC Season 4."
+        "Implemented user and admin authentication with Google Login/Signup.",
+        "Selected for open-source contributions in SWOC Season 4, with active developer involvement."
       ],
       "features": [
         {
@@ -18,74 +18,77 @@
         },
         {
           "featureTitle": "Easy registration experience",
-          "featureDescription": "Allows users to register and manage for events easily and seamlessly."
+          "featureDescription": "Allows users to register and manage events easily and seamlessly."
         }
       ],
       "link": "https://sigmaevents.netlify.app/"
     },
     {
-      "title": "News Aggregator Platform - NewsHunter",
-      "description": "Created news aggregator platform fetching live articles from NewsAPI based on user's interests.",
+      "title": "Quiz Website for Institutes - Quizzer",
+      "description": "Built a full-stack web application for quiz management, incorporating multi-role authentication, real-time malpractice detection, and secure Google login.",
       "features": [
         {
-          "featureTitle": "News API Integration",
-          "featureDescription": "Provides news articles based on user's interests, dynamic content."
+          "featureTitle": "Multi-role authentication",
+          "featureDescription": "Supports different user roles (admin, teacher, student) with customized access levels."
         },
         {
-          "featureTitle": "Slug Implementation",
-          "featureDescription": "Implemented dynamic handling of API calls based on user-provided keywords using the slug concept."
+          "featureTitle": "Real-time malpractice detection",
+          "featureDescription": "Monitors quiz sessions to detect and prevent cheating in real-time."
+        },
+        {
+          "featureTitle": "Google Login",
+          "featureDescription": "Secure Google authentication integrated for easy access and account management."
         }
       ],
-      "link": "https://newshunter0.netlify.app/"
+      "link": "https://github.com/abhideepkumar/dbms_quiz"
     },
     {
-      "title": "Simple Quiz Website",
-      "description": "Built a simple quiz website in Next.js using MongoDB for database and deployed it on Netlify.",
+      "title": "Deepfake Detection Platform - Deep Verify",
+      "description": "Developed a website for deepfake detection using HuggingFace's API, addressing ethical concerns in digital media.",
       "features": [
         {
-          "featureTitle": "Tech used",
-          "featureDescription": "Created a simple quiz website using HTML, CSS, and JavaScript in Next.js for educational purposes."
+          "featureTitle": "Deepfake detection",
+          "featureDescription": "Identifies and flags deepfake content using advanced AI techniques."
         },
         {
-          "featureTitle": "MongoDB database",
-          "featureDescription": "10 hard-coded questions with a 15-second timer for each question, with results saved in a MongoDB database."
+          "featureTitle": "Integration with HuggingFace's API",
+          "featureDescription": "Utilized HuggingFace's API for efficient deepfake analysis and detection."
         }
       ],
-      "link": "https://mongoquiz.netlify.app/"
+      "link": "https://deepverify0.netlify.app/"
     }
   ],
   "experiences": [
     {
       "role": "Full Stack Developer",
-      "company": "Pratigya Team",
+      "company": "Pratigya Team - Google Solution Challenge",
       "duration": "January 2024 - February 2024",
       "link": "https://pratigya-nie.netlify.app/",
       "responsibilities": [
-        "Created and maintained APIs using Node.js and Express.js.",
-        "Used Firebase's Firestore as the database and implemented CRUD operations.",
-        "Used Firebase for authentication."
+        "Developed a responsive website addressing women's safety, featuring SOS calls, real-time incident updates, and a community feed.",
+        "Used the MERN stack with Firebase Firestore for secure data management and Firebase Authentication for user access."
       ]
     },
     {
       "role": "Frontend Developer",
-      "company": "Google Developer Student Club, NIE Mysore",
+      "company": "Notefy, Google Developer Student Club",
       "duration": "December 2023 - January 2024",
       "link": "",
       "responsibilities": [
-        "Designed and developed user interfaces for web applications using Next.js and Tailwind CSS.",
-        "Tested and debugged frontend code."
+        "Led a team of 4 developers to build a website enhancing student learning by summarizing PDFs using OCR recognition and AI models.",
+        "Designed and implemented a user-friendly UI/UX using Next.js and Tailwind CSS."
       ]
     }
   ],
   "achievements": [
     {
       "title": "Google Developer Student Club, NIE Mysore",
-      "description": ["Tech Core Member of the GDSC Club."]
+      "description": ["Tech Core Member, contributed to numerous projects and events, and mentored 150+ students during the RootAccess Hackathon."]
     },
     {
       "title": "Girl Geek IEEE Hackathon, VVCE Mysore",
       "description": [
-        "Secured third place with a website leveraging Hugging Face’s AI integration for deepfake detection."
+        "Secured third place with an innovative website integrating Hugging Face's AI for deepfake detection."
       ]
     },
     {

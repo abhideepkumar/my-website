@@ -7,7 +7,7 @@ const Experience = () => {
     <div>
       {data.experiences.map((experience) => (
         <div key={experience.role} className="p-3 border-b-2 border-gray-200">
-          <h2 className="text-2xl text-purple-600">{experience.role}</h2>
+          <h2 className="text-2xl text-teal-600">{experience.role}</h2>
           <h3 className="text-xl text-gray-600">{experience.company}</h3>
           <p className="text-lg text-gray-600">{experience.duration}</p>
           <ul className="list-disc list-inside">
@@ -26,7 +26,7 @@ const Experience = () => {
                   });
             }}
           >
-            <p className="text-purple-600 hover:underline">View Project</p>
+            <p className="text-teal-600 hover:underline">View Project</p>
           </button>
         </div>
       ))}

@@ -7,7 +7,7 @@ const Projects = () => {
     <div>
       {data.projects.map((project) => (
         <div key={project.title} className="p-3 border-b-2 border-gray-200">
-          <h2 className="text-2xl text-purple-600">{project.title}</h2>
+          <h2 className="text-2xl text-teal-600">{project.title}</h2>
           <p className="text-lg text-gray-600">{project.description}</p>
           <ul className="list-disc list-inside">
             {project.achievements &&
@@ -32,7 +32,7 @@ const Projects = () => {
                   });
             }}
           >
-            <p className="text-purple-600 hover:underline">View Project</p>
+            <p className="text-teal-600 hover:underline">View Project</p>
           </button>
         </div>
       ))}

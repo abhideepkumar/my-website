@@ -3,5 +3,5 @@
 @tailwind utilities;
 body{
   font-family: "Quicksand Variable", sans-serif;
-  @apply bg-purple-50;
+  @apply bg-teal-50;
 }
