@@ -4,13 +4,20 @@ import { SocialIcon } from 'react-social-icons';
 import Projects from '<>/components/projects';
 import Experience from '<>/components/experience';
 import Achievements from '<>/components/achievements';
+import Skills from '<>/components/skills';
+import { useState } from 'react';
 
 export default function Home() {
+    const [isSkillsModalOpen, setIsSkillsModalOpen] = useState(false);
     const onResumeDownload = () => {
         window.open(
             'https://drive.google.com/drive/folders/1Ki6Jl84hvH4MJR-JGcme0wTQBp2uFuSs?usp=drive_link',
             '_blank',
         );
+    };
+
+    const toggleSkillsModal = () => {
+        setIsSkillsModalOpen(!isSkillsModalOpen);
     };
 
     return (
@@ -41,6 +48,12 @@ export default function Home() {
                             className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 my-5 rounded text-center"
                         >
                             Download Resume
+                        </button>
+                        <button
+                            onClick={toggleSkillsModal}
+                            className="border-teal-600 border-2 hover:bg-teal-600 hover:text-white font-bold py-2 px-10 rounded text-center"
+                        >
+                            Show Skills
                         </button>
                         <p className="font-light py-5">
                             <SocialIcon
@@ -115,6 +128,20 @@ export default function Home() {
                     <Achievements />
                 </div>
             </div>
+            {isSkillsModalOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                    <div className="bg-white p-6 rounded-lg max-w-2xl w-full m-4">
+                        <h2 className="text-2xl font-bold mb-4">Skills</h2>
+                        <Skills/>
+                        <button
+                            onClick={toggleSkillsModal}
+                            className="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </main>
     );
 }
